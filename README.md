@@ -30,7 +30,7 @@ Raw data from shelters is notoriously messy. One shelter might list age as "2 mo
 - **Smart Extraction:** Uses Regex to extract data such as energy level and numeric weights from unstructured text descriptions to normalize data.
 - **Data Imputation:** Handles missing values (e.g., "Unknown" energy levels) to ensure the matching engine functions without crashing.
 
-### 2. The Recommendation Engine (`dog_matcher.py`)
+### 2. The Recommendation Engine (`rec_sys.py`)
 
 This is not a simple filter; it is a weighted scoring system designed to mimic a human adoption counselor.
 
@@ -44,6 +44,7 @@ This is not a simple filter; it is a weighted scoring system designed to mimic a
 - **Web Interface:** Porting the CLI "Melon" assistant to a web app using Streamlit or React.
 - **Real-Time Updates:** Setting up a cron job to run the scrapers daily and update the CSV automatically.
 - **Image Recognition:** Using AI to auto-tag dog breeds or colors based on their profile photos.
+- **User Input error handling:** Using LLM to analyze user input to better understand user preferences and allow a more natural conversational UI
 
 ## Files List
 
